@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Trattoria Pizzaria</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#pag-historia">HISTÓRIA</a>
+            <a href="cardapio.html">CARDÁPIO</a>
+            <a href="#pag-reserva">RESERVA</a>
+            <a href="https://contate.me/pizzariaTrattoria53723ug7">DELIVERY</a>
+            <a href="#footer">CONTATO</a>
+            <a href="#footer">HORÁRIOS</a>
+        </nav>
+
+        <main>
+            <h1>Trattoria Pizzaria</h1>
+        </main>
+
+        <section>
+            <div id="pag-historia">
+                <img id="imagem-historia" src="img/historia.jpg" alt="">
+                <article>
+                   <h2>HISTÓRIA</h2>
+
+                    <p>A Itália é a maior referência para pizzas que temos hoje em dia. Mas a receita chegou ao país apenas na época das cruzadas, graças aos turcos e muçulmanos que chegaram com a receita. A ideia é que as pessoas comprassem fatias da mesma e fossem comendo pelo caminho, muito parecido com o que se faz hoje em dia.</p>
+                    <p>Assim, em seu começo interessava mais a população mais pobre. Porém, a popularidade do alimento foi aumentando à medida que a realeza se apaixonava pela comida.</p>
+                    <p>A primeira pizza conhecida em solo brasileiro foi trazida a São Paulo pelos imigrantes italianos em 1910, tendo como seu estabelecimento de estréia o famoso bairro do Brás.</p>
+                    <p>A pizzaria mais antiga do país acabou fechando e do modelo ela caiu no gosto popular e foi abrasileirada. Afinal, dar um jeitinho brasileiro é bom demais. E foi assim, que os diversos sabores que conhecemos hoje foram nascendo, e se adaptando de estado para estado.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pag-cardapio">
+            <h2>ACESSE NOSSO CARDÁPIO</h2>
+
+            <a id="link-cardapio" href="cardapio.html">CARDÁPIO</a>
+        </section>
+
+        <section id="pag-reserva">
+            <div id="conteudo-reserva">
+                <h2>RESERVA</h2>
+
+                <p>Para evitar filas de espera você pode reservar uma mesa conosco!</p>
+
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome completo" maxlength="30" required>
+
+                    <label for="cpf">CPF:</label>
+				    <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" onkeyup="validarCPF()" required><br/>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" required>
+
+                    
+                    <div id="data-hora-pes">
+                        <div class="data-hora-pes">
+                            <label for="data">Data</label>
+                            <input type="date" name="data" required>
+                        </div>
+                        <div class="data-hora-pes">
+                            <label for="hora">Hora</label>
+                            <input type="time" name="hora" required>
+                        </div>
+                        <div>
+                            <label for="pessoas">Pessoas</label>
+                            <input type="number" name="pessoas" max="26" min="1" step="1" required>
+                        </div>
+                    </div>
+
+                    <!-- ENVIAR -->
+                    <div id="enviar-limpar">
+                        <input type="submit" name="bt-reservar" value="Reservar">
+                        <input type="reset" name="bt-limpar" value="Limpar">
+                    </div>
+                </form>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18265.454467797907!2d-47.89129629757939!3d-15.759664859878232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b1e02415707%3A0x3060d8a3139ab079!2sInstituto%20Federal%20de%20Bras%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1659583226500!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <footer>
+            <div class="pag-rod">
+                <div class="col-1">
+                    <h3>HORÁRIOS E DELIVERY</h3>
+                    <ul>
+                        <li><b>Segunda a quinta:</b> 16:00 às 00:00</li>
+                        <li><b>Sexta a domingo:</b> 16:00 às 00:00</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>CONTATOS</h3>
+                    <ul>
+                        <li><b>Telefone:</b> (61) 9999-8888</li>
+                        <li><b>WhatsApp:</b> (61) 98888-0000</li>
+                        <li><b>E-mail:</b> trattorria@pizza.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pag-rod">
+                <div class="col-1">
+                    <h3>ENDEREÇO</h3>
+                    <ul>
+                        <li><b>Brasília-DF, Asa Norte,</b> Via L2 Norte, SGAN 610, Módulo D, E, F e G - CEP: 70.830-450</li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <h3>REDES SOCIAIS</h3>
+
+                    <a class="redes-sociais" href="#">
+                        <img src="img/facebook-icon.png" alt="logo do facebook">
+                        <p class="text-redes-sociais">/TrattoriaPizzaria</p>
+                    </a>
+                    <a class="redes-sociais" href="#">
+                        <img src="img/instagram-icon.png" alt="logo do instagram">
+                        <p class="text-redes-sociais">@TrattoriaPizzaria</p>
+                    </a>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="autores">
+                <p>Desenvolvido por <a href="https://www.linkedin.com/in/luisfyllypy/" target="_blank">Luis Fyllypy</a> e <a href="https://www.linkedin.com/in/david-almeida-789a9bb7/" target="_blank">David Almeida</a></p>
+            </div>
+        </footer>
+    </body>
+    <script>
+        var cpf = 0;
+
+        function validarCPF() {
+            var cpf = document.getElementById("cpf");
+
+            if (cpf.value.length == 3 || cpf.value.length == 7) {
+                cpf.value += ".";
+            } else if (cpf.value.length == 11) {
+                cpf.value += "-";
+            }
+
+        }
+    </script>
+</html>
